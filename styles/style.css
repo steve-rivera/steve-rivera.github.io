@@ -1,0 +1,335 @@
+h1, h2, h3, .nav__link, .nav__link a {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase; }
+
+* {
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0; }
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #83b85f; }
+  a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #ff7200; }
+
+blockquote {
+  background: #f9f7f6;
+  border-left: 5px solid #538baf;
+  font-size: .92em;
+  margin: 30px 0;
+  padding: 20px; }
+
+body {
+  color: #444444;
+  font-family: 'Esteban', serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  color: #538baf;
+  font-size: 3.7em; }
+
+h2 {
+  color: #538baf;
+  font-size: 2.8em; }
+
+h3 {
+  color: #ff7200;
+  font-size: 1em; }
+
+hr {
+  background: #f9f7f6;
+  border: none;
+  box-shadow: none;
+  height: 5px;
+  margin: 120px 0;
+  width: 100%; }
+
+nav {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #32546a;
+  height: 14px;
+  opacity: 0;
+  padding: 20px 0 22px 0;
+  position: fixed;
+  top: -56px;
+  width: 100%;
+  z-index: 9999; }
+  nav.is-visible {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    top: 0; }
+
+p {
+  line-height: 1.3;
+  margin: 30px 0; }
+
+section {
+  position: relative; }
+
+strong {
+  color: #000; }
+
+ul {
+  font-size: 0.6em;
+  margin: 0;
+  padding: 0; }
+
+.l-centered {
+  margin: 0 auto;
+  text-align: center; }
+  .l-centered * {
+    text-align: center; }
+
+.l-left {
+  float: left; }
+
+.l-mts {
+  margin-top: 40px; }
+
+.l-mtm {
+  margin-top: 80px; }
+
+.l-mtl {
+  margin-top: 120px; }
+
+.l-mbs {
+  margin-bottom: 40px; }
+
+.l-mbm {
+  margin-bottom: 80px; }
+
+.l-mbl {
+  margin-bottom: 120px; }
+
+.l-right {
+  float: right; }
+
+.l-wrap {
+  margin: 0 auto;
+  max-width: 750px;
+  width: 90%; }
+
+.arrow {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  height: 81px;
+  position: absolute;
+  top: 33%;
+  width: 81px; }
+
+.arrow--left {
+  background-image: url(../images/left-arrow.png);
+  float: left; }
+
+.arrow--right {
+  background-image: url(../images/right-arrow.png);
+  float: right;
+  right: 0; }
+
+.mobile-menu {
+  display: none;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  width: 31px; }
+
+.nav__link, .nav__link a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #f9f7f6;
+  cursor: pointer;
+  display: inline-block;
+  list-style: none;
+  margin: 0 30px 0 0;
+  padding: 0;
+  text-decoration: none; }
+  .nav__link:hover, .nav__link a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #ff7200; }
+  .nav__link:last-child, .nav__link a:last-child {
+    margin: 0; }
+  .nav__link.is-active, .nav__link a.is-active {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #83b85f; }
+
+.nav__link--large {
+  display: none;
+  font-size: .8em; }
+
+.portfolio-item {
+  position: relative; }
+  .portfolio-item a {
+    margin-top: 15px;
+    font-size: 18px; }
+
+.slider-nav li {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  height: 10px;
+  width: 10px; }
+  .slider-nav li.is-active {
+    border-color: #83b85f;
+    background: #83b85f; }
+
+.slider-wrap {
+  margin: 30px auto 10px auto; }
+
+.slider-wrap--app {
+  -moz-box-sizing: border-box;
+  background: url(../images/iphone.png) no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 753px;
+  padding: 106px 25px 0 31px;
+  width: 358px; }
+
+.slider-wrap--docs {
+  width: 550px; }
+
+.slider-wrap--email {
+  width: 436px; }
+
+.slider-wrap--print {
+  width: 489px; }
+
+.slider-wrap--site {
+  -moz-box-sizing: border-box;
+  background: url(../images/browser.png) no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 483px;
+  padding: 45px 4px 4px 4px;
+  width: 550px; }
+
+.stripe {
+  background: rgba(247, 244, 243, 0.95);
+  border-bottom: 1px solid #e5dcd7;
+  height: 14px;
+  padding: 20px 0 22px 0;
+  width: 100%; }
+  .stripe .nav__link, .stripe .nav__link a {
+    color: #d0c1b9; }
+    .stripe .nav__link:hover, .stripe .nav__link a:hover {
+      color: #ff7200; }
+
+.subheader {
+  color: #ff7200;
+  font-size: 1.27em; }
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative; }
+
+.swipe-text {
+  display: none;
+  font-size: 14px; }
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative; }
+
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative; }
+
+.swipe-wrap img {
+  width: 100%; }
+
+.text-large {
+  font-size: 1.1em; }
+
+@media only screen and (max-width: 620px) {
+  body {
+    font-size: 16px;
+    overflow-x: hidden; }
+
+  hr {
+    margin: 60px 0; }
+
+  nav {
+    font-size: 26px;
+    height: 100%;
+    left: -240px;
+    opacity: 1;
+    padding: 0 15px;
+    top: 0;
+    width: 200px; }
+    nav.is-visible {
+      opacity: 1;
+      left: 0; }
+
+  nav ul {
+    float: none !important; }
+    nav ul:first-of-type {
+      border-bottom: 2px solid #294659;
+      border-top: 2px solid #294659;
+      margin: 0 0 30px 0;
+      padding: 0 0 30px 0; }
+
+  .l-mtl {
+    margin-top: 90px; }
+
+  .l-mbl {
+    margin-bottom: 90px; }
+
+  .arrow {
+    display: none; }
+
+  .mobile-menu {
+    display: block; }
+
+  .nav__link {
+    display: block;
+    margin: 25px 0; }
+
+  .nav__link--large {
+    display: block; }
+
+  .slider-wrap {
+    width: 100%; }
+
+  .slider-wrap--app {
+    height: 463px;
+    padding: 67px 16px 0 20px;
+    width: 220px; }
+
+  .slider-wrap--site {
+    height: 280px;
+    padding: 25px 2px 2px 2px;
+    width: 320px; }
+
+  .stripe {
+    position: fixed;
+    top: 0;
+    z-index: 9999; }
+
+  .stripe .l-wrap {
+    display: none; }
+
+  .swipe-text {
+    display: inline; } }

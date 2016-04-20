@@ -1,0 +1,88 @@
+@media only screen and (max-width: 620px) {
+
+  body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  hr {
+    margin: 60px 0;
+  }
+
+  nav {
+    font-size: 26px;
+    height: 100%;
+    left: -240px;
+    opacity: 1;
+    padding: 0 15px;
+    top: 0;
+    width: 200px;
+
+    &.is-visible {
+      opacity: 1;
+      left: 0;
+    }
+  }
+
+  nav ul {
+    float: none !important;
+
+    &:first-of-type {
+      border-bottom: 2px solid darken($blue, 25%);
+      border-top: 2px solid darken($blue, 25%);
+      margin: 0 0 30px 0;
+      padding: 0 0 30px 0;
+    }
+  }
+
+  .l-mtl { margin-top: 90px; }
+  .l-mbl { margin-bottom: 90px; }
+
+  .arrow {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav__link {
+    display: block;
+    margin: 25px 0;
+  }
+
+  .nav__link--large {
+    display: block;
+  }
+
+  .slider-wrap {
+    width: 100%;
+  }
+
+  .slider-wrap--app {
+    height: 463px;
+    padding: 67px 16px 0 20px;
+    width: 220px;
+  }
+
+  .slider-wrap--site {
+    height: 280px;
+    padding: 25px 2px 2px 2px;
+    width: 320px;
+  }
+
+  .stripe {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .stripe .l-wrap {
+    display: none;
+  }
+
+  .swipe-text {
+    display: inline;
+  }
+
+}

@@ -1,0 +1,359 @@
+!!!5
+
+%html
+
+  %head
+    %link{ rel: 'stylesheet', type: 'text/css', href: 'styles/style.css' }
+    %link{ rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Esteban|Roboto+Slab:400,700' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0' }
+    %title Steve Rivera - UX Architect, Front-End Engineer
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47801534-1', 'ssrivera.com');
+      ga('send', 'pageview');
+
+
+  %body
+
+    .stripe
+      %img.mobile-menu{ src: 'images/mobile_menu.png' }
+      .l-wrap
+        %span.nav__link.nav__link--large.js-top-mobile Steve Rivera
+        %ul.l-left
+          %li.nav__link.js-nav-link{ data: { link: 'levelup' } } LevelUp
+          %li.nav__link.js-nav-link{ data: { link: 'blog' } } Blog
+          %li.nav__link.js-nav-link{ data: { link: 'orion' } } Wevo
+
+        %ul.l-right
+          %li.nav__link
+            %a{ href: 'https://github.com/steve-rivera?tab=repositories', target: '_blank' } Github
+          %li.nav__link
+            %a{ href: 'http://www.linkedin.com/in/stevesrivera', target: '_blank' } LinkedIn
+          %li.nav__link
+            %a{ href: 'http://www.ssrivera.com/cv.pdf', target: '_blank' } View CV
+          %li.nav__link
+            %a{ href: 'mailto:steverivera60@gmail.com', target: '_blank' } Contact
+
+    %nav
+      .l-wrap
+        %span.nav__link.nav__link--large.js-top-mobile Steve Rivera
+        %ul.l-left
+          %li.nav__link.js-nav-link{ data: { link: 'levelup' } } LevelUp
+          %li.nav__link.js-nav-link{ data: { link: 'blog' } } Blog
+          %li.nav__link.js-nav-link{ data: { link: 'orion' } } Wevo
+
+        %ul.l-right
+          %li.nav__link
+            %a{ href: 'https://github.com/steve-rivera?tab=repositories', target: '_blank' } Github
+          %li.nav__link
+            %a{ href: 'http://www.linkedin.com/in/stevesrivera', target: '_blank' } LinkedIn
+          %li.nav__link
+            %a{ href: 'http://www.ssrivera.com/cv.pdf', target: '_blank' } View CV
+          %li.nav__link
+            %a{ href: 'mailto:steverivera60@gmail.com', target: '_blank' } Contact
+
+    .content
+      .l-wrap
+        %section.l-mtl
+
+          %h1 Steve Rivera
+          %h2.subheader UX Architect, Front-End Engineer
+
+          %p.text-large.l-mtl
+            Expert web and mobile user interface designer; end-to-end user experience
+            and product designer; front-end engineer; and brand development expert. Most recently, led
+            a team of designers at LevelUp in the creation of highly regarded mobile- and web-based
+            applications.
+
+          %p.text-large
+            View samples of my work below and at
+            %a{ href: 'https://github.com/steve-rivera?tab=repositories', target: '_blank' } Github.
+            Also, view my
+            %a{ href: 'http://www.linkedin.com/in/stevesrivera', target: '_blank' } LinkedIn Profile
+            or
+            %a{ href: 'http://www.ssrivera.com/cv.pdf', target: '_blank' } view my CV.
+
+        %hr.js-nav-waypoint
+
+        %section.js-portfolio-waypoint{ data: { portfolio: 'levelup' } }
+
+          %h3 Portfolio:
+          %h2 LevelUp
+
+          .l-centered.l-mts
+            %img{ src: 'images/levelup_intro.png', width: '90%' }
+
+          %p
+            LevelUp is an app that allows consumers to pay with their phone at thousands of
+            locations in the United States.
+            %strong
+              With over 1M registered users executing upwards
+              of 12,000 transactions per day totalling just under $1M dollars in sales per week,
+              and a nearly 5-star overall rating in the App Store, LevelUp has emerged as an industry
+              leader, often praised for its ease-of-use.
+            I led the design team and oversaw all
+            aspects of design for LevelUp, including: mobile and web interfaces for consumers,
+            businesses and internal teams &mdash; from wireframes to pixel-perfect Photoshop
+            mockups; hardware design and prototyping using SketchUp and KeyShot; branding and logo
+            development; print, digital and email marketing; and front-end engineering using HAML,
+            SCSS and JavaScript in a Ruby on Rails environment with Git for version control.
+
+          %blockquote
+            %em
+              "I have never reviewed an app before. In this case I felt compelled to do so. This app is
+              fantastic due to its ease of use, convenience, and savings perks. This app may potentially
+              revolutionize the mobile payments industry. 5/5 for sure."
+            %br
+            &mdash; Typical App Store Review
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Consumer Mobile App
+            %a.js-download-ios{ href: 'https://itunes.apple.com/us/app/levelup-.-pay-with-your-phone/id424121785?mt=8' }
+              Download for iPhone
+            %br
+            %a.js-download-android{ href: 'https://play.google.com/store/apps/details?id=com.scvngr.levelup.app' }
+              Download for Android
+            %br
+            .arrow.arrow--left.js-levelup-app-slider-left
+            .arrow.arrow--right.js-levelup-app-slider-right
+            .slider-wrap.slider-wrap--app
+              #levelup-app-slider.swipe
+                .swipe-wrap
+                  %div
+                    %img{ src: 'images/levelup_app_01.png' }
+                  %div
+                    %img{ src: 'images/levelup_app_02.png' }
+                  %div
+                    %img{ src: 'images/levelup_app_03.png' }
+                  %div
+                    %img{ src: 'images/levelup_app_04.png' }
+                  %div
+                    %img{ src: 'images/levelup_app_05.png' }
+            #levelup-app-slider-nav
+              %ul#levelup-app-slider-position.slider-nav
+                %li.is-active
+                %li
+                %li
+                %li
+                %li
+              %span.swipe-text (swipe left and right)
+
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Website
+            %a{ href: 'https://www.thelevelup.com/', target: '_blank' } Visit Live Website
+            %br
+
+            .arrow.arrow--left.js-levelup-site-slider-left
+            .arrow.arrow--right.js-levelup-site-slider-right
+            .slider-wrap.slider-wrap--site
+              #levelup-site-slider.swipe
+                .swipe-wrap
+                  %div
+                    %img{ src: 'images/levelup_site_01.png' }
+                  %div
+                    %img{ src: 'images/levelup_site_02.png' }
+                  %div
+                    %img{ src: 'images/levelup_site_03.png' }
+                  %div
+                    %img{ src: 'images/levelup_site_04.png' }
+                  %div
+                    %img{ src: 'images/levelup_site_05.png' }
+            #levelup-site-slider-nav
+              %ul#levelup-site-slider-position.slider-nav
+                %li.is-active
+                %li
+                %li
+                %li
+                %li
+              %span.swipe-text (swipe left and right)
+
+
+          / .portfolio-item.l-centered.l-mtl.l-mbs
+          /   %h3 Business Dashboard
+          /   .arrow.arrow--left.js-levelup-dashboard-slider-left
+          /   .arrow.arrow--right.js-levelup-dashboard-slider-right
+          /   .browser
+          /     #levelup-dashboard-slider.swipe
+          /       .swipe-wrap
+          /         %div
+          /           %img.dashboard-screen{ src: 'images/levelup_dashboard_01.png' }
+          /         %div
+          /           %img.dashboard-screen{ src: 'images/levelup_dashboard_02.png' }
+          /         %div
+          /           %img.dashboard-screen{ src: 'images/levelup_dashboard_03.png' }
+          /         %div
+          /           %img.dashboard-screen{ src: 'images/levelup_dashboard_04.png' }
+          /         %div
+          /           %img.dashboard-screen{ src: 'images/levelup_dashboard_05.png' }
+          /   #levelup-dashboard-slider-nav
+          /     %ul#levelup-dashboard-slider-position.slider-nav
+          /       %li.is-active
+          /       %li
+          /       %li
+          /       %li
+          /       %li
+          /     %span.swipe-text (swipe left and right)
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Email
+            .arrow.arrow--left.js-levelup-email-slider-left
+            .arrow.arrow--right.js-levelup-email-slider-right
+            .slider-wrap.slider-wrap--email
+              #levelup-email-slider.swipe
+                .swipe-wrap
+                  %div
+                    %img{ src: 'images/levelup_email_01.png' }
+                  %div
+                    %img{ src: 'images/levelup_email_02.png' }
+            #levelup-email-slider-nav
+              %ul#levelup-email-slider-position.slider-nav
+                %li.is-active
+                %li
+              %span.swipe-text (swipe left and right)
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Hardware
+          %img{ src: 'images/hardware.png', width: '100%' }
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Print Marketing
+            .arrow.arrow--left.js-levelup-print-slider-left
+            .arrow.arrow--right.js-levelup-print-slider-right
+            .slider-wrap.slider-wrap--print
+              #levelup-print-slider.swipe
+                .swipe-wrap
+                  %div
+                    %img{ src: 'images/levelup_print_01.png' }
+                  %div
+                    %img{ src: 'images/levelup_print_02.png' }
+            #levelup-print-slider-nav
+              %ul#levelup-print-slider-position.slider-nav
+                %li.is-active
+                %li
+              %span.swipe-text (swipe left and right)
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Company Documents
+            %a{ href: 'http://steveriveraportfolio.s3.amazonaws.com/Company%20Overview.pdf' } Download the Company Overview
+            .arrow.arrow--left.js-levelup-docs-slider-left
+            .arrow.arrow--right.js-levelup-docs-slider-right
+            .slider-wrap.slider-wrap--docs
+              #levelup-docs-slider.swipe
+                .swipe-wrap
+                  %div
+                    %img{ src: 'images/levelup_docs_01.png' }
+                  %div
+                    %img{ src: 'images/levelup_docs_02.png' }
+                  %div
+                    %img{ src: 'images/levelup_docs_03.png' }
+            #levelup-docs-slider-nav
+              %ul#levelup-docs-slider-position.slider-nav
+                %li.is-active
+                %li
+                %li
+              %span.swipe-text (swipe left and right)
+
+        %hr
+
+        %section.js-portfolio-waypoint{ data: { portfolio: 'blog' } }
+
+          %h3 Portfolio:
+          %h2 Travel Blog
+
+          %p
+            I created this travel blog from scratch as a personal learning project. I wanted the
+            interface to be image focused so as to be as compelling as possible. I added
+            functionality to filter through blog posts based on trip, date and country. The site's
+            layout is fluid and entirely responsive. It is built in Ruby on Rails with a HAML, SCSS
+            and JQuery UI front- end. View the code at
+            %a{ href: 'https://github.com/steve-rivera/steve-rivera-blog' } Github.
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Website
+            %a{ href: 'http://blog.ssrivera.com' } Visit Live Website
+            .arrow.arrow--left.js-blog-site-slider-left
+            .arrow.arrow--right.js-blog-site-slider-right
+            .slider-wrap.slider-wrap--site
+              #blog-site-slider.swipe
+                .swipe-wrap
+                  %div
+                    %img{ src: 'images/blog_site_01.png' }
+                  %div
+                    %img{ src: 'images/blog_site_02.png' }
+                  %div
+                    %img{ src: 'images/blog_site_03.png' }
+            #blog-site-slider-nav
+              %ul#blog-site-slider-position.slider-nav
+                %li.is-active
+                %li
+                %li
+              %span.swipe-text (swipe left and right)
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Admin Panel
+            .arrow.arrow--left.js-blog-admin-slider-left
+            .arrow.arrow--right.js-blog-admin-slider-right
+            .slider-wrap.slider-wrap--site
+              #blog-admin-slider.swipe
+                .swipe-wrap
+                  %div
+                    %img{ src: 'images/blog_admin_03.png' }
+                  %div
+                    %img{ src: 'images/blog_admin_01.png' }
+                  %div
+                    %img{ src: 'images/blog_admin_02.png' }
+            #blog-admin-slider-nav
+              %ul#blog-admin-slider-position.slider-nav
+                %li.is-active
+                %li
+                %li
+              %span.swipe-text (swipe left and right)
+
+        %hr
+
+        %section.js-portfolio-waypoint{ data: { portfolio: 'orion' } }
+
+          %h3 Portfolio:
+          %h2 Wevo
+
+          %p
+            Wevo is a freelance project for a private client. It is an internal tool to allow their
+            own clients to request service in an organized way. I built both the front- and back-end as
+            well as led the client in  developing the product and its UI. Again, the site is built in
+            Ruby on Rails with a HAML, SCSS and JavaScript front-end.
+
+          .portfolio-item.l-centered.l-mtl.l-mbs
+            %h3 Website
+            .arrow.arrow--left.js-orion-site-slider-left
+            .arrow.arrow--right.js-orion-site-slider-right
+            .slider-wrap.slider-wrap--site
+              #orion-site-slider.swipe
+                .swipe-wrap
+                  %div
+                    %img{ src: 'images/wevo_site_01.png' }
+                  %div
+                    %img{ src: 'images/wevo_site_02.png' }
+                  %div
+                    %img{ src: 'images/wevo_site_03.png' }
+                  %div
+                    %img{ src: 'images/wevo_site_04.png' }
+            #orion-site-slider-nav
+              %ul#orion-site-slider-position.slider-nav
+                %li.is-active
+                %li
+                %li
+                %li
+              %span.swipe-text (swipe left and right)
+
+        .l-mbl
+
+  %script{ src: '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' }
+  %script{ src: 'scripts/waypoints.min.js' }
+  %script{ src: 'scripts/swipe.js' }
+  %script{ src: 'scripts/script.js' }
+  %script{ src: 'scripts/sliders.js' }

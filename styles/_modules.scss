@@ -1,0 +1,170 @@
+.arrow {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  height: 81px;
+  position: absolute;
+  top: 33%;
+  width: 81px;
+}
+
+.arrow--left {
+  background-image: url(../images/left-arrow.png);
+  float: left;
+}
+
+.arrow--right {
+  background-image: url(../images/right-arrow.png);
+  float: right;
+  right: 0;
+}
+
+.mobile-menu {
+  display: none;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  width: 31px;
+}
+
+.nav__link, .nav__link a {
+  @include transition(all .2s ease-in-out);
+  @extend %header;
+  color: $dust;
+  cursor: pointer;
+  display: inline-block;
+  list-style: none;
+  margin: 0 30px 0 0;
+  padding: 0;
+  text-decoration: none;
+
+  &:hover {
+    @include transition(all .2s ease-in-out);
+    color: $orange;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &.is-active {
+    @include transition(all .2s ease-in-out);
+    color: $green;
+  }
+}
+
+.nav__link--large {
+  display: none;
+  font-size: .8em;
+}
+
+.portfolio-item {
+  position: relative;
+
+  a {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+
+.slider-nav li {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  height: 10px;
+  width: 10px;
+
+  &.is-active{
+    border-color: $green;
+    background: $green;
+  }
+}
+
+.slider-wrap {
+  margin: 30px auto 10px auto;
+}
+
+.slider-wrap--app {
+  -moz-box-sizing: border-box;
+  background: url(../images/iphone.png) no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 753px;
+  padding: 106px 25px 0 31px;
+  width: 358px;
+}
+
+.slider-wrap--docs {
+  width: 550px;
+}
+
+.slider-wrap--email {
+  width: 436px;
+}
+
+.slider-wrap--print {
+  width: 489px;
+}
+
+.slider-wrap--site {
+  -moz-box-sizing: border-box;
+  background: url(../images/browser.png) no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 483px;
+  padding: 45px 4px 4px 4px;
+  width: 550px;
+}
+
+.stripe {
+  background: rgba(darken($dust, 1%), 0.95);
+  border-bottom: 1px solid darken($dust, 10%);
+  height: 14px;
+  padding: 20px 0 22px 0;
+  width: 100%;
+
+  .nav__link, .nav__link a {
+    color: darken($dust, 20%);
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.subheader {
+  color: $orange;
+  font-size: 1.27em;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.swipe-text {
+  display: none;
+  font-size: 14px;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+.swipe-wrap img {
+  width: 100%;
+}
+
+.text-large {
+  font-size: 1.1em;
+}
