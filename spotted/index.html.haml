@@ -1,0 +1,185 @@
+!!!
+%html
+  %head
+    %title Spotted
+
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0' }
+
+    %meta{ name: 'description', content: 'Spotted Media' }
+    %meta{ name: 'keywords', content: 'Spotted Media, Spotted, Celebrity Advertising' }
+    %meta{ name: 'author', content: 'Spotted Media' }
+
+    %meta{ property: 'og:title', content: 'Spotted' }
+    %meta{ property: 'og:type', content: 'website' }
+    %meta{ property: 'og:image', content: '/favicon.png' }
+    %meta{ property: 'og:url', content: 'https://www.spotted.us' }
+    %meta{ property: 'og:site_name', content: 'Spotted' }
+    %meta{ property: 'og:description', content: 'Spotted Media' }
+    %meta{ property: 'og:logo', content: 'qwiklabs_logo_900x887.png', size: '900x887' }
+
+    %link{ rel: 'shortcut icon', href: '/favicon.ico' }
+    %link{ rel: 'stylesheet', href: 'stylesheets/application.css' }
+
+    %script{ src: 'javascripts/application.js' }
+
+  %body
+
+    %header
+      %img{ src: 'images/logo.svg' }
+      %nav.header__nav
+        %a.header__nav__link{ href: '#what-we-do' }
+          What We Do
+        %a.header__nav__link{ href: '#how-we-work' }
+          How We Work
+        %a.header__nav__link{ href: '#why-were-good' }
+          Why We're Good
+        %a.header__nav__link.header__nav__link--bold{ href: '#contact-us' }
+          Try It Out
+
+    %section.section--dark.hero
+      .hero__image
+      .hero__content
+        %h1.hero__heading The leader in native celebrity advertising.
+        %h2.hero__subheading Convert consumer pop-culture fascination into sales.
+
+    %section.what-we-do#what-we-do
+      .l-wrapper
+        %h4.section__heading What We Do
+        %h2
+          Celebrities use your brands in their everyday lives. Don’t let that go
+          to waste.
+        %p.section__blurb
+          Spotted’s proprietary brand recognition and targeting system uses a
+          data-driven approach to generate immediate ROI from these authentic
+          moments.
+
+      .collage.l-mbxl
+        .collage__column
+          .collage__image
+            %img{ src: 'images/ashley-tisdale.png' }
+          .collage__image.collage__image--small
+            %img{ src: 'images/heidi-klum.png' }
+          .collage__image.collage__image--small
+            %img{ src: 'images/tom-hiddleston.png' }
+        .collage__column.collage__column--optional
+          .collage__image
+            %img{ src: 'images/ashley-benson.png' }
+          .collage__image
+            %img{ src: 'images/harry-styles.png' }
+        .collage__column
+          .collage__image.collage__image--small
+            %img{ src: 'images/joe-jonas.png' }
+          .collage__image.collage__image--small
+            %img{ src: 'images/kate-upton.png' }
+          .collage__image
+            %img{ src: 'images/karrueche-tran.png' }
+
+      %p
+        %a{ href: '#contact_us' }
+          Learn more about Spotted's technical platform
+          %i.fa.fa-angle-right
+
+    %section.section--quote
+      .l-wrapper
+        %blockquote
+          “This is a quote that really emphasizes how experienced and
+          knowledgable Spotted is about the celebrity-based ad space.”
+          %cite
+            Mary Smith, Global Solutions Inc.
+
+    %section.how-we-work#how-we-work
+      .l-wrapper
+        %h4.section__heading How We Work
+        %h2
+          Effortless to execute. Easy to try.
+        %p.section__blurb
+          Spotted provides end-to-end campaign execution.
+
+        .pillar__container
+          .pillar.l-third
+            %img{ src: 'images/objectives.svg', height: 100 }
+            %h3 Define Objectives
+            %p
+              Define key metrics that are important to your brand.
+          .pillar.l-third
+            %img{ src: 'images/execution.svg', height: 100 }
+            %h3 Campaign Execution
+            %p
+              Legal and celebrity approval process, plus continuous ad
+              optimization.
+          .pillar.l-third
+            %img{ src: 'images/results.svg', height: 100 }
+            %h3 Results
+            %p
+              Customized reports showing key metrics such as ROAS, CTR, CPC and
+              CPM.
+
+    %section.section--quote
+      .l-wrapper
+        %blockquote
+          “Spotted ads generate incredible ROI and high-quality customer
+          traffic for New Balance.”
+          %cite
+            Patrick Cassidy, Global Digital Director at New Balance
+
+    %section.section--dark.why-were-good#why-were-good
+      .l-wrapper
+        %h4.section__heading Why We're Good
+        %h2
+          Spotted is driving unprecedented ROI for leading global brands.
+        %p.section__blurb
+          Celebrity-based advertising works. We work with some of the most
+          innovative marketers in the world.
+
+        .pillar__container.pillar__container--center
+          .pillar.l-third
+            %img{ src: 'images/new-balance.png', width: 156 }
+          .pillar.l-third
+            %img{ src: 'images/orbitz.png', width: 187 }
+          .pillar.l-third
+            %img{ src: 'images/wb.png', width: 89 }
+          .pillar.l-third
+            %img{ src: 'images/ugg.png', width: 117 }
+          .pillar.l-third
+            %img{ src: 'images/joes.png', width: 187 }
+          .pillar.l-third
+            %img{ src: 'images/king.png', width: 130 }
+
+        %p
+          %a{ href: '#contact_us' }
+            Contact us for real customer case-studies
+            %i.fa.fa-angle-right
+
+    %section.contact-us#contact-us
+      .l-wrapper
+        %h4.section__heading Contact Us
+        %h2
+          Ready to Learn More?
+        %p.section__blurb
+          Our celebrity-based ads are more effective. We have the tech and
+          experience to make it happen and we handle the entire process. No
+          contracts or obligations. What are you waiting for?
+
+        %form
+          .form__row
+            .form__input
+              %input{ type: 'text', placeholder: 'First Name' }
+            .form__input
+              %input{ type: 'text', placeholder: 'Last Name' }
+          .form__row
+            .form__input
+              %input{ type: 'email', placeholder: 'Email' }
+            .form__input
+              %input{ type: 'text', placeholder: 'Phone' }
+          .form__row
+            .form__input
+              %input{ type: 'text', placeholder: 'Company' }
+          .form__row
+            .form__input
+              %input{ type: 'text', placeholder: 'Title' }
+          .form__row
+            .form__input
+              %input.button.button--large{ type: 'submit', value: 'Submit' }
+
+    %footer
+

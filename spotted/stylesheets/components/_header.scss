@@ -1,0 +1,47 @@
+header {
+  @include align-items(center);
+  @include display(flex);
+  @include position(fixed, 0 0 nil 0);
+  height: rem(60); 
+  padding-left: $base-spacing;
+  padding-right: $base-spacing; 
+  z-index: 10;
+}
+
+.header__nav {
+  @include align-items(center);
+  @include display(flex);
+  margin-left: auto;
+}
+
+.header__nav__link {
+  color: $white;
+  display: block;
+  font-size: rem(14);
+  font-weight: bold;
+  opacity: .7;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $white;
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  &:not(:last-child) {
+    margin-right: $base-spacing;
+  }
+}
+
+.header__nav__link--bold {
+  background: $primary-brand-color;
+  border-radius: $border-radius;
+  opacity: 1;
+  padding: rem(4) rem(10);
+
+  &:hover {
+    background: shade($primary-brand-color, 15%);
+  }
+}
+

@@ -1,0 +1,51 @@
+// Typography
+$base-font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+$heading-font-family: 'Droid Serif', serif;
+
+// Font Sizes
+$small-font-size: rem(12);
+$base-font-size: rem(16);
+$large-font-size: rem(24);
+
+// Font Weights
+$normal: 400;
+$bold: 700;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+$small-line-height: 1;
+
+// Other Sizes
+$border-radius: 3px;
+$base-spacing: $base-line-height * 1rem;
+$large-spacing: $base-spacing * 2;
+$largest-spacing: $base-spacing * 4;
+$small-spacing: $base-spacing / 2;
+$smallest-spacing: $base-spacing / 4;
+
+// Colors
+$blue: #00B1EA;
+$purple: #642CD9;
+$green: #8ED525;
+$red: #FF4E1E;
+$dark-gray: #222;
+$light-gray: #eee;
+$white: #fff;
+
+$primary-brand-color: $blue;
+$secondary-brand-color: $purple;
+
+$action-color: $green;
+$error-color: $red;
+$success-color: $green;
+
+// Responsive Breakpoints
+$small-monitor: 'max-width: 1100px';
+$ipad: 'max-width: 900px';
+$mobile: 'max-width: 450px';
+
+// Misc
+$base-box-shadow: 3px 3px 0px rgba(black, .10);
+$base-border: 2px solid $light-gray;
+$spacer-border: 3px solid $white;

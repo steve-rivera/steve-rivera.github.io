@@ -1,0 +1,45 @@
+.collage {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  padding: 0 $large-spacing;
+}
+
+.collage__column {
+  @include align-content(center);
+  @include display(flex);
+  @include flex(1 1 auto);
+  @include flex-wrap(wrap);
+  min-width: rem(290);
+  max-width: rem(420);
+  width: 33%;
+}
+
+.collage__column--optional {
+  @media ($small-monitor) {
+    display: none;
+  }
+
+  @media ($ipad) {
+    display: none;
+  }
+
+  @media ($mobile) {
+    display: none;
+  }
+}
+
+.collage__image {
+  padding: rem(5);
+  width: 100%;
+
+  img {
+    border-radius: $border-radius;
+    display: block;
+    width: 100%;
+  }
+}
+
+.collage__image--small {
+  width: 50%;
+}

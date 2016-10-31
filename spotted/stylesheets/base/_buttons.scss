@@ -1,0 +1,27 @@
+.button {
+  @include transition(all .1s ease-in);
+  border: none;
+  border-radius: $border-radius;
+  background: $primary-brand-color;
+  color: $white;
+  cursor: pointer;
+  font-family: $base-font-family;
+  font-size: rem(10);
+  font-weight: $bold;
+  padding: rem(6);
+  text-transform: uppercase; 
+  width: 100%;
+
+  &:hover {
+    background: shade($primary-brand-color, 10%);
+  }
+
+  &:active {
+    background: shade($primary-brand-color, 20%);
+  }
+}
+
+.button--large {
+  font-size: rem(16);
+  padding: rem(12);
+}

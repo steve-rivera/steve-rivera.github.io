@@ -1,0 +1,33 @@
+.hero {
+  height: calc(100vh * .82);
+  position: relative;
+}
+
+.hero__image {
+  @include filter(grayscale(1) brightness(.33));
+  @include position(absolute, 0 0 0 0);
+  background: url('../images/hero-bg.jpg') center center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.hero__content {
+  @include align-items(center);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include display(flex);
+  @include position(absolute, 0 0 0 0);
+  padding: 0 $base-spacing;
+  z-index: 2;
+
+  h1, h2 {
+    text-shadow: 0 0 30px rgba(black, 1);
+  }
+
+  h2 {
+    font-family: $base-font-family;
+    font-size: rem(22);
+    font-weight: $normal;
+    margin-top: $large-spacing;
+  }
+}

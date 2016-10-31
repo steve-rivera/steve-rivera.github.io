@@ -1,0 +1,28 @@
+.pillar__container {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+}
+
+.pillar__container--center {
+  @include align-items(center);
+}
+
+.pillar {
+  @include flex(1 0 auto);
+  max-width: rem(350);
+  min-width: rem(250);
+  padding: 0 $small-spacing;
+
+  img {
+    margin-bottom: $base-spacing;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $base-spacing;
+
+    @media ($mobile) {
+      margin-bottom: $large-spacing;
+    }
+  }
+}

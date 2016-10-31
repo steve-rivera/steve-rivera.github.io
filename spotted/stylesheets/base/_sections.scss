@@ -1,0 +1,33 @@
+section {
+  padding-bottom: $largest-spacing;
+  padding-top: $largest-spacing;
+  text-align: center;
+}
+
+.section--dark {
+  background: $dark-gray;
+  color: $white;
+}
+
+.section--quote {
+  @include linear-gradient(170deg, $primary-brand-color, $secondary-brand-color);
+  color: $white;
+}
+
+.section__heading {
+  color: $primary-brand-color;
+
+  &:after {
+    @include size(rem(300) 3px);
+    background: $primary-brand-color;
+    border-radius: 10px;
+    content: '';
+    display: block;
+    margin: $base-spacing auto $large-spacing auto;
+  }
+}
+
+.section__blurb {
+  max-width: rem(500);
+  margin: $base-spacing auto $large-spacing auto;
+}

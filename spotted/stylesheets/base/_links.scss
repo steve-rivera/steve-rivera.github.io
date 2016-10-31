@@ -1,0 +1,19 @@
+@mixin link($color) {
+  @include transition(all .1s ease-in-out);
+  color: $color;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: shade($color, 15%);
+    text-decoration: underline;
+  }
+}
+
+a {
+  @include link($secondary-brand-color);
+}
+
+.section--dark a {
+  @include link(tint($secondary-brand-color, 40%));
+}

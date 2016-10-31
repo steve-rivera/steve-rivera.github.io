@@ -1,0 +1,17 @@
+blockquote {
+  font-family: $heading-font-family;
+  font-size: rem(36);
+  font-weight: $normal;
+  display: block;
+  line-height: $heading-line-height;
+}
+
+cite {
+  display: block;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: $bold;
+  margin-top: $small-spacing;
+  opacity: .7;
+}
