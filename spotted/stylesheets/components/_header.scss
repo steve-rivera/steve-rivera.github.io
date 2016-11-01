@@ -2,10 +2,27 @@ header {
   @include align-items(center);
   @include display(flex);
   @include position(fixed, 0 0 nil 0);
+  @include transition(all .5s ease-in-out);
+  background: rgba($white, 0);
+  border-top: 2px solid transparent;
   height: rem(60); 
   padding-left: $base-spacing;
   padding-right: $base-spacing; 
   z-index: 10;
+
+  &.is-active {
+    background: rgba($white, 1);
+    box-shadow: 0 4px 4px rgba(black, .15);
+    border-top-color: $primary-brand-color;
+
+    .header__nav__link {
+      color: $dark-gray;
+    }
+
+    .header__nav__link--bold {
+      color: $white;
+    }
+  }
 }
 
 .header__nav {
@@ -17,9 +34,9 @@ header {
 .header__nav__link {
   color: $white;
   display: block;
-  font-size: rem(14);
+  font-size: rem(13);
   font-weight: bold;
-  opacity: .7;
+  opacity: .85;
   text-decoration: none;
   text-transform: uppercase;
 
