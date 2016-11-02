@@ -1,0 +1,33 @@
+footer {
+  @include align-items(center);
+  @include display(flex);
+  background: $dark-gray;
+  color: #888;
+  font-size: rem(14);
+  padding: $large-spacing $base-spacing;
+
+  a {
+    color: #888;
+
+    &:hover {
+      color: #bbb;
+    }
+  }
+}
+
+.footer__left {
+  span {
+    display: block;
+    font-size: rem(12);
+    margin-top: $small-spacing;
+  }
+}
+
+.footer__right {
+  margin-left: auto;
+  text-align: right;
+
+  a:not(:last-child) {
+    margin-right: $base-spacing;
+  }
+}

@@ -1,6 +1,6 @@
 // Typography
 $base-font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
-$heading-font-family: 'Droid Serif', serif;
+$heading-font-family: 'Lato', san-serif;
 
 // Font Sizes
 $small-font-size: rem(12);
@@ -10,6 +10,7 @@ $large-font-size: rem(24);
 // Font Weights
 $normal: 400;
 $bold: 700;
+$black: 900;
 
 // Line height
 $base-line-height: 1.5;
@@ -17,7 +18,7 @@ $heading-line-height: 1.2;
 $small-line-height: 1;
 
 // Other Sizes
-$border-radius: 3px;
+$border-radius: 2px;
 $base-spacing: $base-line-height * 1rem;
 $large-spacing: $base-spacing * 2;
 $largest-spacing: $base-spacing * 4;

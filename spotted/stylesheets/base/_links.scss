@@ -2,6 +2,7 @@
   @include transition(all .1s ease-in-out);
   color: $color;
   cursor: pointer;
+  font-weight: $bold;
   text-decoration: none;
 
   &:hover {

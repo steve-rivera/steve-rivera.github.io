@@ -1,14 +1,26 @@
 .hero {
-  height: calc(100vh * .82);
+  height: calc(100vh * .85);
+  overflow: hidden;
+  padding: 0 $base-spacing;
   position: relative;
 }
 
 .hero__image {
   @include filter(grayscale(1) brightness(.33));
   @include position(absolute, 0 0 0 0);
-  background: url('../images/hero-bg.jpg') center center;
+  background: url('../images/going-places.jpg') center center;
   background-size: cover;
   z-index: 1;
+}
+
+.hero__video {
+  @include filter(grayscale(1) brightness(.33));
+  @include position(absolute, 0 0 nil 0);
+  z-index: 2;
+
+  @media($mobile) {
+    display: none;
+  }
 }
 
 .hero__content {
@@ -18,16 +30,19 @@
   @include display(flex);
   @include position(absolute, 0 0 0 0);
   padding: 0 $base-spacing;
-  z-index: 2;
+  z-index: 3;
 
   h1, h2 {
     text-shadow: 0 0 30px rgba(black, 1);
   }
 
   h2 {
-    font-family: $base-font-family;
-    font-size: rem(22);
-    font-weight: $normal;
-    margin-top: $large-spacing;
+    font-size: rem(26);
+    margin: $base-spacing 0;
+    text-transform: uppercase;
+  }
+
+  .button {
+    font-size: rem(18);
   }
 }

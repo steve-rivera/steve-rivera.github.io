@@ -11,21 +11,23 @@ h6 {
 }
 
 h1 {
-  font-size: rem(44);
+  font-size: rem(60);
+  font-weight: $black;
 }
 
 h2 {
-  font-size: rem(36);
+  font-size: rem(42);
 }
 
 h3 {
   color: $primary-brand-color;
-  font-family: $base-font-family;
-  font-size: rem(18);
+  font-family: $heading-font-family;
+  font-size: rem(19);
 }
 
 h4 {
-  font-family: $base-font-family;
+  font-family: $heading-font-family;
   font-size: rem(16);
+  font-weight: $black;
   text-transform: uppercase;
 }
