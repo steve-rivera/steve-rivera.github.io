@@ -514,6 +514,12 @@ header {
     text-decoration: none; }
   .header__nav__link:not(:last-child) {
     margin-right: 1.5rem; }
+  @media (max-width: 900px) {
+    .header__nav__link {
+      display: none; } }
+  @media (max-width: 450px) {
+    .header__nav__link {
+      display: none; } }
 
 .header__nav__link--bold {
   background: #00b1ea;
@@ -524,6 +530,12 @@ header {
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1); }
   .header__nav__link--bold:hover {
     background: #0096c6; }
+  @media (max-width: 900px) {
+    .header__nav__link--bold {
+      display: block; } }
+  @media (max-width: 450px) {
+    .header__nav__link--bold {
+      display: block; } }
 
 .logo .spotted {
   -webkit-transition: all 0.5s ease-in-out;

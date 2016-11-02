@@ -54,6 +54,14 @@ header {
   &:not(:last-child) {
     margin-right: $base-spacing;
   }
+
+  @media($ipad) {
+    display: none;
+  }
+
+  @media($mobile) {
+    display: none;
+  }
 }
 
 .header__nav__link--bold {
@@ -66,6 +74,15 @@ header {
 
   &:hover {
     background: shade($primary-brand-color, 15%);
+  }
+
+
+  @media($ipad) {
+    display: block;
+  }
+
+  @media($mobile) {
+    display: block;
   }
 }
 
