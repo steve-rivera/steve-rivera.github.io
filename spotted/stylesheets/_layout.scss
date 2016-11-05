@@ -1,5 +1,9 @@
 .l-third {
   width: 33%;
+
+  @media ($mobile) {
+    width: 100%;
+  }
 }
 
 .l-wrapper {

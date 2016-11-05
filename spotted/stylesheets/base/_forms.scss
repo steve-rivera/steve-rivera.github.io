@@ -12,7 +12,7 @@ form {
 }
 
 .form__input {
-  @include flex(1 0 auto);
+  @include flex(1 0 0);
 
   &:not(:last-child) {
     margin-right: $small-spacing;
@@ -22,6 +22,7 @@ form {
 input[type='text'],
 input[type='email'] {
   @include transition(all .1s ease-in);
+  -webkit-appearance: none;
   border: 2px solid $light-gray;
   border-radius: $border-radius;
   font-family: $base-font-family;

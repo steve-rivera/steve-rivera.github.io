@@ -33,16 +33,19 @@
   z-index: 3;
 
   h1, h2 {
-    text-shadow: 0 0 30px rgba(black, 1);
+    text-shadow: 0 0 30px rgba(black, 1), 2px 2px 0px rgba(black, .3);
   }
 
   h2 {
-    font-size: rem(26);
-    margin: $base-spacing 0;
-    text-transform: uppercase;
+    font-size: rem(28);
+    font-weight: 300;
+    margin: $base-spacing 0 rem(36) 0;
+    text-transform: none;
   }
 
   .button {
-    font-size: rem(18);
+    font-size: rem(16);
+    box-shadow: 0 2px 6px rgba(black, .5);
+    padding: rem(16) rem(54);
   }
 }

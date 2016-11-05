@@ -25,4 +25,15 @@ $( function() {
     }
   });
 
+  $('.collage__marker').click( function() {
+    var marker = $(this);
+    
+    if ( marker.hasClass('hover') ) {
+      marker.removeClass('hover');
+    } else {
+      $('.collage__marker').removeClass('hover');
+      marker.addClass('hover');
+    }
+  });
+
 });

@@ -13,6 +13,11 @@ footer {
       color: #bbb;
     }
   }
+
+  @media($mobile) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer__left {
@@ -20,6 +25,12 @@ footer {
     display: block;
     font-size: rem(12);
     margin-top: $small-spacing;
+  }
+
+  @media($mobile) {
+    .logo {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -29,5 +40,11 @@ footer {
 
   a:not(:last-child) {
     margin-right: $base-spacing;
+  }
+
+  @media($mobile) {
+    display: block;
+    margin-top: $small-spacing;
+    text-align: center;
   }
 }

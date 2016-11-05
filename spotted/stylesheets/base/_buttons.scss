@@ -1,5 +1,6 @@
 .button {
   @include transition(all .1s ease-in);
+  -webkit-appearance: none;
   border: 1px solid shade($primary-brand-color, 10%);
   border-radius: $border-radius;
   box-shadow: 0 2px 2px rgba(black, .2);
